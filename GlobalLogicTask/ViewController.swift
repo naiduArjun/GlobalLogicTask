@@ -12,14 +12,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        var array1 = [8, 8, 7, 2, 1, 7, 9]
-        var array2 = [14, 8, 2, 7, 7]
-
+//        var array1 = [8, 8, 7, 2, 1, 7, 9]
+//        var array2 = [14, 8, 2, 7, 7]
+        
+        var array1 = ["raju", "raju","raju","raanagju","raaju"]
+             var array2 = ["raju", "mani","bhuvi","bhuvi"]
+ 
         print(solve(array1, array2))
         
         
     }
     
+//    using generics for different datatypes 
     func solve<T: Equatable & Comparable & Hashable>(_ array1: [T], _ array2: [T]) -> [T] {
         var counts1 = countElements(array1)
         var counts2 = countElements(array2)
